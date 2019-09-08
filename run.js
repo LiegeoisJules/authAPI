@@ -5,6 +5,7 @@ const dotenv = require('dotenv');
 
 //Import Routes
 const authRoute = require('./routes/auth');
+const dashboardRoute = require('./routes/dashboard');
 
 dotenv.config();
 
@@ -18,8 +19,8 @@ mongoose.connect(process.env.DB_CONNECT,
 //Middleware
 app.use(express.json());
 
-
 //Route Middleware
 app.use('/api/user', authRoute);
+app.use('/dashboard', dashboardRoute);
 
-app.listen(8080, () => console.log("Server start"));
+app.listen(process.env.HTTP_PORT, () => console.log("Server start"));
