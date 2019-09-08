@@ -1,0 +1,38 @@
+{
+  "name": "authapi",
+  "version": "1.0.0",
+  "description": "Auth API Node.js JWT by Dev Ed",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"no test is configured\"",
+    "start": "nodemon run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/LiegeoisJules/authAPI"
+  },
+  "keywords": [
+    "auth",
+    "api",
+    "nodejs",
+    "node",
+    "js",
+    "jwt",
+    "tuto",
+    "dev_ed"
+  ],
+  "author": "Dev Ed",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^15.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.13"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
